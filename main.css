@@ -1,0 +1,111 @@
+#navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+}
+
+#navbar a {
+  color: black;
+}
+
+#navbar img {
+  width: 8rem;
+}
+
+#navbar ul {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  margin: 0 2rem;
+}
+
+#navbar li:hover > a {
+  color: #979797;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.products {
+  padding: 2rem 0;
+}
+.products svg {
+  margin-left: 0.2rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.dropdown-content {
+  background-color: white;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+#navbar .dropdown-content a {
+  font-size: 1rem;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  color: #979797;
+}
+
+#navbar .dropdown-content a:hover {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.burgerMenu {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: none;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.burgerMenu span {
+  width: 70%;
+  height: 2px;
+  background: black;
+}
+
+@media (max-width: 768px) {
+  .burgerMenu {
+    display: flex;
+  }
+  #navbar ul {
+    width: 80%;
+    position: absolute;
+    top: 70px;
+    flex-direction: column;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    border-radius: 4px;
+  }
+  #navbar li {
+    margin: 2rem 0;
+  }
+}
