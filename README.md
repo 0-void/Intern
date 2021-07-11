@@ -23,6 +23,6 @@ A simple Navbar example created using html and css.
   
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/muthhukumar/simple-navbar-example/blob/main/LICENSE)
 
   
